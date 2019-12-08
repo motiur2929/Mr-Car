@@ -1,0 +1,599 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+body{	
+font-family: arial;	
+font-size: 15px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.logodiv {cursor: pointer;margin-top: 0px;}
+.menulist ul li {
+    float: left;
+}
+menu {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.menulist ul {
+    list-style: none;
+}
+.menulist ul li a {
+    padding: 29px 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3c3c3c;
+    display: inline-block;
+    transition:all 1s;
+}
+.menulist ul li a:hover{
+	color: white;
+	background: #0b0b80;
+	transform: scaleY(1);
+	transform-origin: top;
+	opacity: 1;
+}
+.logodiv img {
+    width: 32%;
+    padding: 0px 15px;
+    margin-top: 8px;
+}
+img {
+    width: 100%;
+}
+nav {
+    background: #f7f7f7;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+}
+ul.submenu {
+    position: absolute;
+    background: #04104ca8;
+    width: 17%;
+    top: 79px;
+    left: 59%;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition:all 1s;
+}
+.menulist ul li:hover ul.submenu{
+	transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+	
+}
+
+ul.submenu li {
+    float: none;
+}
+ul.submenu li a {
+    padding: 13px 8px;
+    color: #e2dddd;
+}
+ul.submenu li a:hover{
+	background: #c38412;
+	color:white;
+	transform: scaleX(0.9);
+}
+
+/*Fist Section Start*/
+section.welcome{
+	    background-image: linear-gradient(#00000070,#00000070), url(image/bg1.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: 100% 75%;
+	    height: 650px;
+	    margin-top: 76px;
+}
+.menuHeading {
+    margin-top: 200px;
+}
+
+.menuHeading h1 {
+    color: #cccccc;
+    padding: 9px 0px;
+    font-size: 45px;
+    text-transform: uppercase;
+    /* font-family: 'Anton', sans-serif; */
+	font-family: 'Abril Fatface', cursive;
+    animation-name:animatoin1;
+    animation-duration:3s;
+}
+@keyframes animatoin1 {
+	
+	form{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}
+	
+		}
+
+.menuHeading p {
+    color: #f3f3f3;
+    font-size: 15px;
+}
+.bg1btn {
+    padding: 55px 0px;
+}
+
+.bg1btn a {
+    display: inline-block;
+    font-size: 19px;
+    text-align: center;
+    border: 1px solid #bdbdc4;
+    text-decoration: none;
+    color: white;
+    width: 170px;
+    padding: 14px 0px;
+    margin-right: 25px;
+    background: #00000040;
+    text-transform: uppercase;
+}
+.founderBoss {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+}
+
+.founderImg {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 50px;
+}
+section.section2 {
+    padding: 70px 0px;
+    background: #fbfbfb;
+}
+.fimage img {
+    width: 56%;
+    padding: 14px 0px;
+}
+.fimage h3 {
+    padding: 0px 29px;
+}
+
+.fimage p {
+    padding: 0px 58px;
+}
+.fcontent h1 {
+    font-size: 28px;
+    padding: 6px 0px;
+}
+
+.fcontent p {
+    color: gray;
+}
+.fcontent a {
+    padding: 5px 4px;
+    text-decoration: none;
+    background: #06e4fb;
+    display: inline-block;
+    color: #383838;
+    text-shadow: 1.5px 0px 0px black;
+}
+
+/*3rd section start*/
+.dervicsBoss {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5em;
+}
+
+section.products {
+    padding: 70px 0px;
+    background: #151C3D;
+}
+
+section.products h1 {
+    font-size: 50px;
+    color: #eceaea;
+    text-align: center;
+    padding-top: 20px;
+}
+section.products P {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #c3bdbd;
+}
+.pimg img {
+    border-radius: 8px;
+}
+
+.pcont h3 {
+    color: #eae7e7;
+    font-size: 22px;
+}
+
+.pcont p {
+    color: #bfbcbc;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+.serviceBlock {
+    cursor: pointer;
+}
+
+/* -----------Hover effect start-------------- */
+.effect{
+	width:100%;
+	background:black;
+	height:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	border-radius:8px;
+	transform:scale(1);
+	transition:2s;
+	opacity:0;	
+	}
+.effect p{
+	color:white !important;
+}
+.s4pimg{
+	position:relative;
+	transition:all 2s;
+}
+.effect:hover{
+	transform:rotateX(180deg);
+	opacity:1;
+}
+.s4pimg:hover{
+	transform:rotateX(180deg);
+	
+	
+}
+/* -----------Hover effect start end-------------- */
+/*4th section start*/
+.serviceSection{
+	padding: 70px 0px;
+	background: #acc8ed45;
+}
+section.serviceSection h1 {
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+}
+section.serviceSection span{
+	color: #ff5e00;
+}
+.s4pcont h3 {
+    color: #403c3c;
+}
+.s4pcont p {
+    color: #635d5d;
+}
+section.serviceSection P {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #484747;
+}
+.s4pcont p {
+    text-align: left !important;
+}
+
+.pcont p {
+    text-align: left !important;
+}
+/*5th section start*/
+.s5blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+section.spre_parts {
+    padding: 80px 0px;
+    background: #fbfbfb;
+}
+.s5heading h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #484008;
+    padding-top: 15px;
+}
+.s5heading span{
+	color:orange;
+}
+.s5heading p {
+    text-align: center;
+    padding-bottom: 40px;
+	color: gray;
+}
+.s5block {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    position: relative;
+    grid-auto-rows: 253px;
+}
+
+.s5block img {
+    border-radius: 5px;
+    margin-top: 55px;
+}
+.s5block p {
+	position: absolute;
+	top: 0em;
+	left: 4.5em;
+	font-size: 40px;
+	font-weight: bold;
+	color: #573d8a;
+}
+ul.spareList {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+    grid-gap: 20px;
+    padding-top: 55px;
+}
+ul.spareList li a {
+    text-decoration: none;
+    color: #d2d1d1;
+    padding: 29px 0px;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+	transition:all 1s;
+}
+ul.spareList li:hover a{
+	color:orange;
+}
+ul.spareList li {
+    background: #062758;
+    height: 87px;
+    border-radius: 5px;
+	transition:all 1s;
+}
+ul.spareList li:hover{
+	transform:scale(0.9);
+}
+.s5block2 p {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: #573d8a;
+    top: 0px;
+    left: 0px;
+}
+
+.s5block2 {
+    position: relative;
+}
+.suppliers {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.bheading h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #573d8a;
+    border-bottom: 2px solid orange;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin: 0px 62px;
+}
+
+.bheading {
+    width: 52%;
+    margin: auto;
+    padding: 20px 0px;
+}
+/*6th section start*/
+.s6blocks {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 1%;
+    grid-gap: 140px;
+}
+.hclient img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    padding: 20px 0pc;
+}
+section.clientSection {
+    padding: 80px 0px;
+    background: #151c3d;
+}
+
+.clientSection h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 2px;
+    margin-bottom: 40px;
+    color: #e1dbdb;
+    display: inline-block;
+    border-bottom: 2px solid orange;
+}
+
+.hclient h3 {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 6px;
+    color: #f3f3f3;
+}
+
+.hclient p {
+    padding: 0px 40px;
+    color: white;
+    line-height:25px;
+}
+.hclient {
+    background: #151c3d;
+    padding: 10px 0px;
+	transition:all 1s;
+}
+.hclient:hover{
+	transform:scale(0.98);
+	border:1px solid #f3f3f3;
+	background: #2f354e;
+}
+.hclient a {
+    display: inline-block;
+    background: #06e4fbbd;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 6px;
+}
+.hclient1{	
+position: relative;
+}
+.hclient1 i{
+	position: absolute;
+	right: -63px;
+	top: 239px;
+	font-size: 100px;
+	cursor: pointer;
+	color: #727790;
+	transition:1s;
+	}
+.hclient1 i:hover{
+	color:blue;
+}	
+/*7th section start*/
+.galleryblocks {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    padding-bottom: 75px;
+}
+section.galler {
+    background: #e9f0fa;
+    padding-top: 65px;
+}
+.glrblcok1{
+	margin-top: -199px;
+}
+.s7icon {
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+.s7icon i {
+	position: absolute;
+	top: -66px;
+	left: 354px;
+	font-size: 60px;
+	color: #484008;
+	cursor: pointer;
+	transition:all 1s;
+	}
+.s7icon i:hover{
+	color:blue;
+}	
+/*8th section start*/
+.outteamBlocks {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+}
+section.ourteam {
+    padding: 60px 0px;
+    background: #fdfdfd;
+}
+.teamblock h3 {
+    text-align: center;
+    color: #343030;
+}
+
+.teamblock p {
+    text-align: center;
+    color: #6d6a6a;
+}
+.teamblock {
+    background: #ebebeb;
+}
+
+/*Footer start*/
+
+.footerBlocks {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
+footer.footerSection {
+    padding-top: 60px;
+    background: #071D21;
+    margin-bottom: 50px;
+}
+
+.fblock h3 {
+    color: #c1c1c1;
+    font-size: 21px;
+    border-bottom: 1px solid #ababab;
+    padding: 3px 0px;
+    text-transform: uppercase;	
+}
+
+.fblock ul {
+    list-style: none;
+    padding: 8px 0px;
+}
+
+.fblock ul li a {
+    color: #b1b1b1;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: arial;
+	transition:all 1s;
+}
+.fblock ul li a:hover{
+	border-bottom:1px solid gray;
+}
+
+.fblock ul li {
+    padding: 5px 0px;
+    border-bottom: 1px solid #505050b3;
+}
+.subscribtion {
+    width: 100%;
+    padding-top: 12px;
+}
+
+.subscribtion input {
+    width: 100%;
+    padding: 8px 6px;
+    margin: 5px 0px;
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+}
+input.sbinout {
+    background: #03A9F4;
+    font-size: 16px;
+    color: #fbfbfb;
+    border: 1px solid #03A9F4;
+    text-shadow: 4px 3px 7px black;
+    font-weight: bold;
+}
+.copywrit p {
+    color: #b1b1b1;
+    padding: 18px 12px;
+}
+
+.copywrit {
+    background: black;
+    height: 50px;
+}
+marquee {
+    height: 50px;
+    padding: 15px 0px;
+    background: #9c9c9c;
+    position: fixed;
+    bottom: 0px;
+    color: #1bfb00;
+}
+
+
+
+
