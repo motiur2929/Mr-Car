@@ -1,1 +1,1 @@
-https://github.com/motiur2929/My-Page.git
+https://motiur2929.github.io/My-Page/
